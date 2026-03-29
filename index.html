@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥限时领券 | 外卖/酒店/打车5折起</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px 20px;
+            border-radius: 16px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .title {
+            font-size: 26px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #e63946;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .title span {
+            color: #e63946;
+            font-weight: bold;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px 15px;
+            margin-bottom: 30px;
+        }
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+            padding: 10px 5px;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+        /* 鼠标悬浮/点击反馈，提升点击欲望 */
+        .item:hover {
+            background-color: #fef2f2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(230, 57, 70, 0.1);
+        }
+        .item:active {
+            transform: translateY(0);
+        }
+        .icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            color: #fff;
+            margin-bottom: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+        .text {
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+        /* 优惠标签，突出利益点 */
+        .tag {
+            font-size: 12px;
+            color: #e63946;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .footer .highlight {
+            color: #e63946;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .footer .note {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+        /* 倒计时/紧迫感提示（可选） */
+        .urgent {
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            background: #e63946;
+            padding: 8px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 紧迫感提示，提升点击冲动 -->
+        <div class="urgent">🔥今日限量！领完即止🔥</div>
+        
+        <div class="title">
+            点<span>下方图标</span>立即领券省钱↓
+        </div>
+        <div class="subtitle">外卖/酒店/打车 最高立减18元</div>
+
+        <div class="grid">
+            <!-- 1. 酒店民宿 -->
+            <a href="https://kzurl17.cn/t3RGcQ" class="item">
+                <div class="icon" style="background-color: #1a3699;">🏨</div>
+                <div class="text">酒店民宿</div>
+                <div class="tag">低至5折</div>
+            </a>
+
+            <!-- 2. 美团外卖/本地生活 -->
+            <a href="https://kurl01.cn/t3OCvA" class="item">
+                <div class="icon" style="background-color: #ffbd00;">🍱</div>
+                <div class="text">美团外卖</div>
+                <div class="tag">立减18元</div>
+            </a>
+
+            <!-- 3. 美团外卖天天领券 -->
+            <a href="https://kzurl07.cn/t3OCEi" class="item">
+                <div class="icon" style="background-color: #ff8800;">🎫</div>
+                <div class="text">美团每日领券</div>
+                <div class="tag">每天可领</div>
+            </a>
+
+            <!-- 4. 饿了么每天领券 -->
+            <a href="https://kzurl15.cn/t3OCbh" class="item">
+                <div class="icon" style="background-color: #00c805;">🥡</div>
+                <div class="text">饿了么领券</div>
+                <div class="tag">无门槛券</div>
+            </a>
+
+            <!-- 5. 京东外卖每天领券 -->
+            <a href="https://kzurl14.cn/t3O6hp" class="item">
+                <div class="icon" style="background-color: #e61610;">🛒</div>
+                <div class="text">京东外卖</div>
+                <div class="tag">立减10元</div>
+            </a>
+
+            <!-- 6. 滴滴打车 -->
+            <a href="https://kzurl03.cn/t3RG9Y" class="item">
+                <div class="icon" style="background-color: #0088ff;">🚖</div>
+                <div class="text">滴滴打车</div>
+                <div class="tag">5折起</div>
+            </a>
+
+            <!-- 7. 电影票 -->
+            <a href="https://kzurl15.cn/t3RGOo" class="item">
+                <div class="icon" style="background-color: #e63946;">🎬</div>
+                <div class="text">电影票</div>
+                <div class="tag">8折特惠</div>
+            </a>
+
+            <!-- 8. 运营商流量 -->
+            <a href="https://kzurl02.cn/t3OCTO" class="item">
+                <div class="icon" style="background-color: #4285f4;">📱</div>
+                <div class="text">大流量套餐</div>
+                <div class="tag">低至19元/月</div>
+            </a>
+
+            <!-- 空占位，保证排版整齐 -->
+            <div class="item" style="pointer-events: none; cursor: default;">
+                <div class="icon" style="background-color: transparent;"></div>
+                <div class="text"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="highlight">✅ 点击图标立即领券，链接永久有效</div>
+            <div style="font-size: 18px; font-weight: bold; margin: 10px 0;">一次领取，天天可用！</div>
+            <div class="note">
+                小店微利，无人工客服，不满意可极速退款<br>
+                所有优惠券真实有效，放心领取！
+            </div>
+        </div>
+    </div>
+</body>
+</html>
